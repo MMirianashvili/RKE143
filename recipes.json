@@ -19,6 +19,14 @@
     ]
   },
   {
+    "id": 3,
+    "name": "Wine",
+    "ingredients": [
+      "Water",
+      "Grapes"
+    ]
+  },
+  {
     "id": 4,
     "name": "Khachapuri",
     "ingredients": [
