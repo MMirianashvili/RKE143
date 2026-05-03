@@ -87,47 +87,41 @@ const server = http.createServer((req, res) => {
         );
     }
 
-    if (url === "/rke143" && method === "POST") {
-        let body = "";
 
-        req.on("data", chunk => {
-            body += chunk;
-        });
+else if (url === "/rke143" && method === "POST") {
+    let body = "";
 
-        req.on("end", () => {
-            const userData = JSON.parse(body);
+    req.on("data", chunk => {
+        body += chunk.toString();
+    });
 
-            if (
-                userData.name === "rke" &&
-                userData.code === "143"
-            ) {
-                const nodeData = fs.readFileSync(
-                    "nodejs.json",
-                    "utf-8"
-                );
+    req.on("end", () => {
+        const data = JSON.parse(body);
 
-                res.writeHead(200, {
-                    "Content-Type": "application/json"
-                });
-
-                return res.end(nodeData);
-            }
+        if (data.nimi === "rke" && data.kood === "143") {
+            const fileData = fs.readFileSync("nodejs.json", "utf-8");
 
             res.writeHead(200, {
                 "Content-Type": "application/json"
             });
 
-            return res.end(
-                JSON.stringify({
-                    message: "Invalid credentials"
-                })
-            );
-        });
+            return res.end(fileData);
 
-        return;
-    }
+        } else {
+            res.writeHead(200, {
+                "Content-Type": "application/json"
+            });
 
-    if (url === "/random" && method === "GET") {
+            return res.end(JSON.stringify({
+                message: "invalid credentials"
+            }));
+        }
+    });
+
+    return;
+}
+
+else if (url === "/random" && method === "GET") {
         const recipes = readJsonFile("recipes.json");
         const randomRecipe = getRandomRecipe(recipes);
 
