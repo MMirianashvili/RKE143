@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Khinkali",
+    "ingredients": [
+      "Meat",
+      "Green",
+      "Dough"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Shaslik",
+    "ingredients": [
+      "Pork",
+      "Beef",
+      "Chicken",
+      "Adzika"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Khachapuri",
+    "ingredients": [
+      "Dough",
+      "Cheese",
+      "Egg"
+    ]
+  }
+]
