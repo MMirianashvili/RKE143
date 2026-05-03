@@ -5,11 +5,11 @@ const PORT = process.env.PORT || 3000;
 
 const personInfo = {
     info: {
-        name: "Mykhailo",
-        hobbies: ["Cars", "Coding", "Gym"]
+        name: "Mykhailo!",
+        hobbies: ["Fishing", "Diving", "Bike riding"]
     },
     contact: {
-        email: "mykhailo@email.com"
+        email: "t3sl4@email.com"
     }
 };
 
