@@ -5,9 +5,10 @@
     "ingredients": [
       "Meat",
       "Green",
-      "Dough",
+      "Dough"
+        ],
       "imageURL": "https://images.pexels.com/photos/4917092/pexels-photo-4917092.jpeg"
-    ]
+    
   },
   {
     "id": 2,
@@ -16,18 +17,20 @@
       "Pork",
       "Beef",
       "Chicken",
-      "Adzika",
+      "Adzika"
+        ],
       "imageURL": "https://images.pexels.com/photos/4917092/pexels-photo-4917092.jpeg"
-    ]
+    
   },
   {
     "id": 3,
     "name": "Wine",
     "ingredients": [
       "Water",
-      "Grapes",
+      "Grapes"
+        ],
       "imageURL": "https://images.pexels.com/photos/4917092/pexels-photo-4917092.jpeg"
-    ]
+    
   },
   {
     "id": 4,
@@ -35,8 +38,9 @@
     "ingredients": [
       "Dough",
       "Cheese",
-      "Egg",
+      "Egg"
+        ],
       "imageURL": "https://images.pexels.com/photos/4917092/pexels-photo-4917092.jpeg"
-    ]
+    
   }
 ]
